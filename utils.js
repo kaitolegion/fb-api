@@ -16,7 +16,7 @@ if (!process.env.FB_CHAT_API_NO_UPDATE_CHECK) {
 			if (!data.version)
 				throw new Error(data.message || 'No version found');
 			if (require('./package.json').version != data.version) {
-				console.warn(`\x1b[33mWARNING:\x1B[0m [fb-chat-api] New version available: ${data.version}. Update with "npm install ntkhang03/fb-chat-api". You can disable this message with "FB_CHAT_API_NO_UPDATE_CHECK=true" env variable.`);
+				// console.warn(`\x1b[33mWARNING:\x1B[0m [fb-chat-api] New version available: ${data.version}. Update with "npm install ntkhang03/fb-chat-api". You can disable this message with "FB_CHAT_API_NO_UPDATE_CHECK=true" env variable.`);
 			}
 		})
 		.catch(e => {
